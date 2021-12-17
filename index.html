@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Test Your Reactions!</title>
+
+    <style type="text/css">
+      #shape {
+        width: 200px;
+        height: 200px;
+        border-radius: 0;
+        background-color: red;
+        display: none;
+        margin-top: 0em;
+        margin-left: 0em;
+      }
+
+      #start_button {
+        background-color: lightgreen;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      #start_button:hover {
+        background-color: orange;
+      }
+
+      #end_button {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      #end_button:hover {
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <body style="margin-left: 10vw;">
+
+    <h1>Test Your Reactions!</h1>
+
+    <p>Click on the boxes and circles as quickly as possible.</p>
+
+    <button id="start_button">Press to Start</button>
+    <button id="end_button">Press to End</button>
+
+    <h2>Your Time: <span id="time_display"></span></h2>
+
+    <div id="playing_field"></div>
+    <ul id="reaction_times_list"></ul>
+
+    <div id="shape"></div>
+
+    <script src="reactiontesterLogic.js" type="text/Javascript"></script>
+
+  </body>
+</html>
