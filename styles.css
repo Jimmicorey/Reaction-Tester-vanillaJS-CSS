@@ -1,0 +1,32 @@
+#shape {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  background-color: red;
+  display: none;
+  margin-top: 0em;
+  margin-left: 0em;
+}
+
+#start_button {
+  background-color: lightgreen;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+}
+#start_button:hover {
+  background-color: orange;
+}
+
+#end_button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+}
+#end_button:hover {
+  background-color: orange;
+}

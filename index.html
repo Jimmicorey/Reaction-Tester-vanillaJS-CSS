@@ -1,60 +1,34 @@
-<html>
-  <head>
-    <title>Test Your Reactions!</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style type="text/css">
-      #shape {
-        width: 200px;
-        height: 200px;
-        border-radius: 0;
-        background-color: red;
-        display: none;
-        margin-top: 0em;
-        margin-left: 0em;
-      }
+  <link rel="stylesheet" href="styles.css">
 
-      #start_button {
-        background-color: lightgreen;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 20px;
-        text-align: center;
-      }
-      #start_button:hover {
-        background-color: orange;
-      }
+  <title>Test Your Reactions!</title>
+</head>
 
-      #end_button {
-        background-color: red;
-        color: white;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 20px;
-        text-align: center;
-      }
-      #end_button:hover {
-        background-color: orange;
-      }
-    </style>
-  </head>
+<body style="margin-left: 10vw;">
 
-  <body style="margin-left: 10vw;">
+  <h1>Test Your Reactions!</h1>
 
-    <h1>Test Your Reactions!</h1>
+  <p>Click on the boxes and circles as quickly as possible.</p>
 
-    <p>Click on the boxes and circles as quickly as possible.</p>
-
+  <section>
     <button id="start_button">Press to Start</button>
     <button id="end_button">Press to End</button>
+  </section>
+  
+  <h2>Your Time: <span id="time_display"></span></h2>
 
-    <h2>Your Time: <span id="time_display"></span></h2>
-
-    <div id="playing_field"></div>
-    <ul id="reaction_times_list"></ul>
-
+  <section id="playing_field">
+    <ol id="reaction_times_list" style="list-style: none;"></ol>
     <div id="shape"></div>
+  </section>
 
-    <script src="reactiontesterLogic.js" type="text/Javascript"></script>
+  <script src="reactiontesterLogic.js" type="text/Javascript"></script>
 
-  </body>
+</body>
 </html>
